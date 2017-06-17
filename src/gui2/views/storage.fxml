@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui2.views.StorageController">
+   <children>
+      <VBox prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="25.0" prefWidth="490.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="fieldImage" prefHeight="25.0" prefWidth="200.0" promptText="image source" />
+                  <Button fx:id="buttonAddImage" mnemonicParsing="false" onAction="#addImage" prefHeight="25.0" prefWidth="100.0" text="Add image" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="490.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="fieldLoadImage" prefHeight="25.0" prefWidth="200.0" promptText="image number" />
+                  <Button fx:id="buttonLoadImage" mnemonicParsing="false" onAction="#loadImage" prefHeight="25.0" prefWidth="100.0" text="Load image" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="490.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="fieldDeleteImage" prefHeight="25.0" prefWidth="200.0" promptText="image number" />
+                  <Button fx:id="buttonDeleteImage" mnemonicParsing="false" onAction="#deleteImage" prefHeight="25.0" prefWidth="100.0" text="Delete image" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="490.0" spacing="5.0">
+               <children>
+                  <Button fx:id="buttonLoadAllImage" mnemonicParsing="false" onAction="#loadAllImage" prefHeight="25.0" prefWidth="100.0" text="Load all images">
+                     <HBox.margin>
+                        <Insets left="205.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
